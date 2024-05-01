@@ -1,3 +1,4 @@
+using AutoService.Domain.Entities.Models.UserModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,5 +25,7 @@ namespace AutoService.Domain.Entities.Models.CarModels
         public string CarCategory {  get; set; }
         public string DocumentType { get; set; }
         public string Seria { get; set; }
+
+        public virtual UserModel User { get; set; }
     }
 }
