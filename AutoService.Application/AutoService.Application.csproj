@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="AutoService\AutoServiceCases\Queries\" />
     <Folder Include="AutoService\CarCases\Queries\" />
   </ItemGroup>
 
