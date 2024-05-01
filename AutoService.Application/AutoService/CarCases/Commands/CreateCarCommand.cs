@@ -1,3 +1,4 @@
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,5 +9,6 @@ namespace AutoService.Application.AutoService.CarCases.Commands
 {
     public class CreateCarCommand
     {
+
     }
 }
