@@ -1,3 +1,5 @@
+using AutoService.Domain.Entities.Models.UserModels;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AutoService.API.Controllers
@@ -12,7 +14,6 @@ namespace AutoService.API.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
-
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
