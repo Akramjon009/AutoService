@@ -1,7 +1,7 @@
 ﻿using AutoService.Domain.Entities.Models.AutoServiceModels;
 using AutoService.Domain.Entities.Models.CarModels;
 using AutoService.Domain.Entities.Models.UserModels;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace AutoService.Application.Abstractions
 {
