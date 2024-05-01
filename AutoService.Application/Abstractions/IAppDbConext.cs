@@ -5,10 +5,11 @@ using System.Data.Entity;
 
 namespace AutoService.Application.Abstractions
 {
-    public class IAppDbConext
+    public interface IAppDbConext
     {
         public DbSet<CarModel> carModels { get; set; }
         public DbSet<UserQuestions> UserQuestions { get; set; }
+
         public DbSet<AutoServiceModel> autoServices { get; set; }
 
         public Task<int> SaveChangesAsync(CancellationToken cancellationToken);
