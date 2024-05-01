@@ -1,4 +1,5 @@
 using AutoService.Domain.Entities.Models.UserModels;
+using AutoService.Domain.Entities.ViewModels.CarViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace AutoService.Domain.Entities.Models.CarModels
     public class CarModel
     {
         public Guid Id { get; set; } = Guid.NewGuid();
-        public Guid UserId { get; set; }
+        public virtual UserViewModel User { get; set; }
         public string City { get; set; }
         public string CarYear { get; set; }
         public string VINcode { get; set; }
@@ -26,6 +27,5 @@ namespace AutoService.Domain.Entities.Models.CarModels
         public string DocumentType { get; set; }
         public string Seria { get; set; }
 
-        public virtual UserModel User { get; set; }
     }
 }
