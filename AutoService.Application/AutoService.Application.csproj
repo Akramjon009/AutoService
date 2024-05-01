@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="AutoService\CarCases\Handlers\" />
     <Folder Include="AutoService\CarCases\Queries\" />
   </ItemGroup>
 
@@ -16,6 +15,10 @@
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="8.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutoService.Domain\AutoService.Domain.csproj" />
   </ItemGroup>
 
 </Project>
